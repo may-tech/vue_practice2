@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="nav-bar"></div>
   <div id="app">
-    <h1>Product goes here</h1>
-    <p>{{ "I love my "+product }}</p>
-    <p>{{description}}</p>
+    <div class="product">
+      <div class="product-image">
+        <a :href="link" target="blunk">VueMastery#2</a>
+      </div>
+      <div class="product-info">
+        <h1>Product goes here</h1>
+        <p>{{ "I love my "+product }}</p>
+        <p>{{description}}</p>
+      </div>
+    </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
