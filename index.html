@@ -11,14 +11,30 @@
   <div id="app">
     <div class="product">
       <div class="product-image">
+        <!-- 「v-bind」の省略、「data」から「link」を出力 -->
         <a :href="link" target="blunk">VueMastery#2</a>
       </div>
+      <!-- 「data」から「product」を出力 -->
       <div class="product-info">
         <h1>{{ product }}</h1>
-        <p v-if="inventry > 10">In Stock</p>
+
+        <!-- <p v-if="inventry > 10">In Stock</p>
         <p v-else-if="inventry <= 10 && inventry > 0">Almost Sold out</p>
         <p v-else>Out of Stock</p>
-        <p v-show="Instock">In stock</p>
+        <p v-show="Instock">In stock</p> -->
+
+        <!-- 「inStock」が「true」なら「In Stock」を表示 -->
+        <p v-if="inStock">In Stock</p>
+        <!-- 「inStock」が「false」なら「Out of Stock」を表示 -->
+        <p v-else>Out of Stock</p>
+
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+        <div v-for="variant in variants" :key="variant.variantId">{{ variant.variantColor }}</div>
+
+
+
       </div>
     </div>
 
