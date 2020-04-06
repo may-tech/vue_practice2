@@ -12,7 +12,7 @@
     <div class="product">
       <div class="product-image">
         <!-- 「v-bind」の省略、「data」から「link」を出力 -->
-        <a :href="link" target="blunk">VueMastery#2</a>
+        <img :src="image">
       </div>
       <!-- 「data」から「product」を出力 -->
       <div class="product-info">
@@ -32,6 +32,9 @@
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
         <div v-for="variant in variants" :key="variant.variantId">{{ variant.variantColor }}</div>
+        <ul>
+          <li v-for="size in sizes">{{ size }}</li>
+        </ul>
 
 
 

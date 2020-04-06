@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     product: 'Socks',
-    link: 'https://www.vuemastery.com/courses/intro-to-vue-js/attribute-binding',
+    image: 'images/green-cocktail.jpeg',
     // inventry: '10',
     inStock: true,
     details: ["80% cotton", "20% polyester", "Gender-neutral"],
@@ -15,6 +15,7 @@ var app = new Vue({
         variantId: 2235,
         variantColor: "blue"
       }
-    ]
+    ],
+    sizes: ["24.0", "24.5", "25.0"]
   }
 })
