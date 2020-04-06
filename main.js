@@ -3,8 +3,7 @@ var app = new Vue({
   data: {
     product: 'Socks',
     image: 'images/green-cocktail.jpeg',
-    // inventry: '10',
-    inStock: true,
+    inStock: false,
     details: ["80% cotton", "20% polyester", "Gender-neutral"],
     variants: [
       {
@@ -18,7 +17,6 @@ var app = new Vue({
         variantImage: 'images/pink-cocktail.jpeg'
       }
     ],
-    sizes: ["24.0", "24.5", "25.0"],
     cart: 0
   },
   methods: {
